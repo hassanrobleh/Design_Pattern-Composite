@@ -53,6 +53,4 @@ export class Waitress {
         this.allMenus.print();
     }
 
-
-
 }
