@@ -1,8 +1,8 @@
-# Design_Pattern-Iterator
+# Design_Pattern-Composite
 
-Itérateur est un patron de conception comportemental qui permet
-de parcourir les éléments d’une collection sans révéler sa
-représentation interne (liste, pile, arbre, etc.).
+Composite est un patron de conception structurel qui permet
+d’agencer les objets dans des arborescences afin de pouvoir
+traiter celles-ci comme des objets individuels.
 
 # Getting Started
 ```bash
