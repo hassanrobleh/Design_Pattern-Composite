@@ -33,5 +33,3 @@ export class MenutestDrive {
     }
 }
 
-// let app = new MenutestDrive();
-// console.log(app.main());
