@@ -1,14 +1,14 @@
+import { Iterator } from './../interfaces/Iterator';
 import { MenuComponent } from "./component/MenuComponent";
 
 export class Menu extends MenuComponent {
 
-    menuComponents: any[];
+    menuComponents: any[] = [];
     name: string;
     description: string;
 
-    constructor(menuComponents: [], name: string, description: string) {
+    constructor( name: string, description: string) {
         super();
-        this.menuComponents = menuComponents;
         this.name = name;
         this.description = description;
     }
@@ -34,10 +34,15 @@ export class Menu extends MenuComponent {
         return this.description;
     }
 
-    print() {
+    print(iterator: Iterator ) {
         let result = "\n" + this.getName();
         result += "\n" + this.getDescription();
         result += "-----------------";
-    }
 
+        while(iterator.hasNext()) {
+            let menuComponent: MenuComponent  = <MenuComponent> iterator.next();
+            menuComponent.print()
+        }
+        return result;
+    }
 }

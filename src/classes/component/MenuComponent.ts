@@ -1,3 +1,4 @@
+import { Iterator } from './../../interfaces/Iterator';
 export abstract class MenuComponent {
 
     add(menuComponent: MenuComponent): void {
@@ -28,7 +29,7 @@ export abstract class MenuComponent {
         throw new Error("Invalid operation for sorted list");
     }
 
-    print() {
+    print(iterator?: Iterator | null) {
         throw new Error("Invalid operation for sorted list");
     }
 
