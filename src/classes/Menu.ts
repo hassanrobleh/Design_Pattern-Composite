@@ -34,15 +34,15 @@ export class Menu extends MenuComponent {
         return this.description;
     }
 
-    print(iterator: Iterator ) {
+    print() {
         let result = "\n" + this.getName();
         result += "\n" + this.getDescription();
         result += "-----------------";
 
-        while(iterator.hasNext()) {
-            let menuComponent: MenuComponent  = <MenuComponent> iterator.next();
-            menuComponent.print()
-        }
+        // while(iterator.hasNext()) {
+        //     let menuComponent: MenuComponent  = <MenuComponent> iterator.next();
+        //     menuComponent.print(iterator)
+        // }
         return result;
     }
 }

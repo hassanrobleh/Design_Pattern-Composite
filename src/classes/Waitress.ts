@@ -19,6 +19,7 @@ export class Waitress {
 
     constructor(allMenus: MenuComponent) {
         this.allMenus = allMenus;
+
     }
 
     // public printMenuPancakeIterator() {

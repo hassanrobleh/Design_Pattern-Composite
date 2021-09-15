@@ -11,7 +11,7 @@ export class PancakeHouseMenuIterator implements Iterator {
 
     next(): object {
         let menuItem: MenuItem = this.items[this.position];
-        this.position = this.position + 1;
+        this.position += 1;
         return menuItem;
     }
 

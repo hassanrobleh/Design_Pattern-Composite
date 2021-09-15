@@ -1,3 +1,4 @@
+import { Iterator } from './../interfaces/Iterator';
 import { Menu } from './../interfaces/Menu';
 import { PancakeHouseMenuIterator } from './PancakeHouseMenuIterator';
 import { MenuItem } from './MenuItem';
@@ -18,9 +19,13 @@ export class PancakeHouseMenu implements Menu {
         this.menuItems.push(menuItem);
     }
 
-    createIterator() {
+    createIterator(): Iterator {
         return new PancakeHouseMenuIterator(this.menuItems)
     }
+
+    // createIterator(): Iterator {
+    //     return 
+    // }
 
 }
 
