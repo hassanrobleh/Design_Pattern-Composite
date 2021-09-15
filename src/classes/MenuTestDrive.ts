@@ -1,5 +1,5 @@
 import { MenuItem } from './MenuItem';
-import { Menu } from './Menu';
+import { MenuComposite } from './MenuComposite';
 import { CafeMenu } from './CafeMenu';
 import { Waitress } from './Waitress';
 import { DinerMenu } from './DinerMenu';
@@ -36,25 +36,24 @@ export class MenutestDrive {
     // }
 
     static main() {
-        let pancakeHouseMenu: MenuComponent = new Menu("PANCAKE HOUSE MENU", "Breakfast");
-        let dinerMenu: MenuComponent = new Menu("DINER MENU", "Lunch");
-        let cafeMenu: MenuComponent = new Menu("CAFE MENU", "Diner");
-        let dessertMenu: MenuComponent = new Menu("DESSERT MENU", "Dessert of course !");
+        // let pancakeHouseMenu: MenuComponent = new MenuComposite("PANCAKE HOUSE MENU", "Breakfast");
+        // let dinerMenu: MenuComponent = new MenuComposite("DINER MENU", "Lunch");
+        // let cafeMenu: MenuComponent = new MenuComposite("CAFE MENU", "Diner");
+        let dessertMenu: MenuComponent = new MenuComposite("DESSERT MENU", "Dessert of course !");
 
-        let allMenus: MenuComponent = new Menu("ALL MENUS", "All menus combined");
+        let allMenus: MenuComponent = new MenuComposite("ALL MENUS", "All menus combined");
 
-        allMenus.add(pancakeHouseMenu);
-        allMenus.add(dinerMenu);
-        allMenus.add(cafeMenu);
+        // allMenus.add(pancakeHouseMenu);
+        // allMenus.add(dinerMenu);
+        // allMenus.add(cafeMenu);
         allMenus.add(dessertMenu);
 
         // add menu items here
+        // dinerMenu.add(new MenuItem("Pasta", "Spaghetti with Marinara Sauce, and a slice of sourdough bread", true, 3.89));
 
-        dinerMenu.add(new MenuItem("Pasta", "Spaghetti with Marinara Sauce, and a slice of sourdough bread", true, 3.89));
+        // dinerMenu.add(dessertMenu);
 
-        dinerMenu.add(dessertMenu);
-
-        dessertMenu.add(new MenuItem("Apple Pie", "Apple pie with a flakey crust, topped with vanilla icecream", true, 1.59));
+        // dessertMenu.add(new MenuItem("Apple Pie", "Apple pie with a flakey crust, topped with vanilla icecream", true, 1.59));
 
         let waitress: Waitress = new Waitress(allMenus);
 

@@ -29,9 +29,7 @@ export abstract class MenuComponent {
         throw new Error("Invalid operation for sorted list");
     }
 
-    print() {
-        throw new Error("Invalid operation for sorted list");
-    }
+    abstract print(): any;
 
 
 }

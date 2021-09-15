@@ -1,3 +1,4 @@
+import { MenuComposite } from './MenuComposite';
 import { Menu } from './../interfaces/Menu';
 import { MenuItem } from './MenuItem';
 import { Iterator } from './../interfaces/Iterator';
@@ -51,7 +52,8 @@ export class Waitress {
     // }
 
     printMenu() {
-        this.allMenus.print();
+        return this.allMenus.print();
+        // return "ok";
     }
 
 }
