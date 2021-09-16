@@ -5,7 +5,7 @@ export abstract class MenuComponent {
         throw new Error("Invalid operation for sorted list");
     }
 
-    remove(menuComponent: MenuComponent) {
+    remove(menuComponent: MenuComponent): void {
         throw new Error("Invalid operation for sorted list");
     }
 
@@ -13,23 +13,25 @@ export abstract class MenuComponent {
         throw new Error("Invalid operation for sorted list");
     }
 
-    getName() {
+    getName(): string {
         throw new Error("Invalid operation for sorted list");
     }
 
-    getDescription() {
+    getDescription(): string {
         throw new Error("Invalid operation for sorted list");
     }
 
-    getPrice() {
+    getPrice(): number {
         throw new Error("Invalid operation for sorted list");
     }
 
-    isVegetarian() {
+    isVegetarian(): boolean {
         throw new Error("Invalid operation for sorted list");
     }
 
-    abstract print(): any;
+    print(): void {
+        throw new Error("Invalid operation for sorted list");
+    };
 
 
 }

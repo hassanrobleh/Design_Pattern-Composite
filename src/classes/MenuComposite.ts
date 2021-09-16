@@ -41,22 +41,18 @@ export class MenuComposite extends MenuComponent {
     }
 
     print() {
-        // let result = "\n" + this.getName();
-        // result += "\n" + this.getDescription();
-        // result += " ok-ok-ok";
+        let result = "\n" + this.getName();
+        result += ", " + this.getDescription();
+        result += "---------------------";
         
-        // let iterator = this.menuComponents[Symbol.iterator]()
-        // while(iterator.) {
-        //     let menuComponent  = iterator.next();
-        //     menuComponent.print()
-        // }
-        // return result;
-        // return 'okokoj,odsf'
-        let res = "";
-        for(let c of this.menuComponents){
-            res = c
+        let successful = false;
+        for (const child of this.menuComponents) {
+            successful = child.print();
+            if (!successful) {
+                return false;
+            }
         }
-        return res;
+        return result;
     }
 
     
