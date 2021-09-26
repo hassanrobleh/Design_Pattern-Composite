@@ -17,7 +17,6 @@ export class Waitress {
 
     printMenu() {
         return this.allMenus.print();
-        // return "ok";
     }
 
 }
