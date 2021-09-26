@@ -7,16 +7,8 @@ import { PancakeHouseMenu } from './PancakeHouseMenu';
 import { MenuComponent } from './component/MenuComponent';
 export class Waitress {
 
-    // pancakeHouseMenu: Menu;
-    // dinerMenu: Menu;
-    // cafeMenu: Menu
+    
     allMenus: MenuComponent;
-
-    // constructor(pancake: Menu, diner: Menu, cafe: Menu) {
-    //     this.pancakeHouseMenu = pancake;
-    //     this.dinerMenu = diner;
-    //     this.cafeMenu = cafe
-    // }
 
     constructor(allMenus: MenuComponent) {
         this.allMenus = allMenus;
