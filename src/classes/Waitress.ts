@@ -15,11 +15,6 @@ export class Waitress {
 
     }
 
-    // public printMenuPancakeIterator() {
-    //     let pancakeIterator = this.pancakeHouseMenu.createIterator();
-    //     return this.printMenus(pancakeIterator);
-    // }
-
     // public printMenuDinerIterator() {
     //     let dinerIterator: Iterator = this.dinerMenu.createIterator();
     //     return this.printMenus(dinerIterator);
