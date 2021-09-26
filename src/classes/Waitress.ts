@@ -15,19 +15,6 @@ export class Waitress {
 
     }
 
-    // private printMenus(iterator: Iterator) {
-    //     let result = "";
-    //     while(iterator.hasNext()) {
-    //         let menuItem  = <MenuItem> iterator.next();
-            
-    //         result += menuItem.getName() + " ";
-    //         result += menuItem.getPrice()+ " ";
-    //         result += menuItem.getDescription();
-
-    //     }
-    //     return result;
-    // }
-
     printMenu() {
         return this.allMenus.print();
         // return "ok";
