@@ -8,7 +8,7 @@ traiter celles-ci comme des objets individuels.
 
 ```bash
 $ git clone https://github.com/hassanrobleh/Design_Pattern-Composite.git
-$ cd Design_Pattern-Composite
+$ cd 
 $ npm install
 $ npm run test
 ```
