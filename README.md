@@ -9,7 +9,7 @@ traiter celles-ci comme des objets individuels.
 $ git clone https://github.com/hassanrobleh/Design_Pattern-Composite.git
 $ cd Design_Pattern-Composite
 $ npm install
-$ npm run test
+$ npm run teste 
 ```
 
 
